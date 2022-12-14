@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Activity">
+
+    <FrameLayout
+        android:background="#4190FE"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <ImageView
+            app:tint="@color/white"
+            android:id="@+id/btn_back"
+            android:src="@drawable/ic_back"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center|start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="Tambah Tugas"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/category_tugas"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <AutoCompleteTextView
+                    android:id="@+id/option_category_tugas"
+                    android:hint="Pilih Kategori"
+                    android:inputType="none"
+                    android:background="@drawable/bg_round_input_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/judul_tugas"
+                android:background="@drawable/bg_round_input_text"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:hint="Masukkan Judul Tugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deskripsi_tugas"
+                android:background="@drawable/bg_round_input_text"
+                android:layout_marginTop="25dp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:hint="Masukkan Judul Tugas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_marginTop="25dp"
+                android:text="Tambah Tugas"
+                android:background="@drawable/bg_round_input_text"
+                app:backgroundTint="#4190FE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
