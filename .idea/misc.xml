@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Kuliah/test/app/src/main/res/drawable/bg_round_input_text.xml" value="0.1" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/drawable/history.xml" value="0.1" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/drawable/ic_back.xml" value="0.1" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="..\:/Kuliah/test/app/src/main/res/layout/activity_add.xml" value="0.1" />
-        <entry key="..\:/Kuliah/test/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Kuliah/test/app/src/main/res/layout/adapter_task.xml" value="0.18" />
-        <entry key="..\:/Kuliah/test/app/src/main/res/menu/menu_buttom.xml" value="0.14427083333333332" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/layout/fragment_detail.xml" value="0.1" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/layout/fragment_history.xml" value="0.1" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Kuliah/test/app/src/main/res/menu/menu_buttom.xml" value="0.1" />
       </map>
     </option>
   </component>

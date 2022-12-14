@@ -3,6 +3,7 @@ package com.d121201051.task
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.d121201051.task.databinding.ActivityAddBinding
@@ -30,8 +31,11 @@ class Add_Activity : AppCompatActivity() {
             val kategori = binding.optionCategoryTugas.text.toString()
 
             if (kategori.isEmpty()) {
-                binding.optionCategoryTugas.error = "Pilih Kategori Tugasnya!!!"
-                binding.optionCategoryTugas.requestFocus()
+                Toast.makeText(
+                    this,
+                    "Kategori wajib diisi",
+                    Toast.LENGTH_SHORT
+                ).show()
                 return@setOnClickListener
             }
 
@@ -48,7 +52,7 @@ class Add_Activity : AppCompatActivity() {
             }
 
             lifecycleScope.launch {
-                val task = Task(0,judul,isi,kategori,"Masih Proses")
+                val task = Task(0,judul,isi,kategori,"On Progress")
                 taskViewModel.addTask(task)
             }
         }
