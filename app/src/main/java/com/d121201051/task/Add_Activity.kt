@@ -54,6 +54,7 @@ class Add_Activity : AppCompatActivity() {
             lifecycleScope.launch {
                 val task = Task(0,judul,isi,kategori,"On Progress")
                 taskViewModel.addTask(task)
+                finish()
             }
         }
 
